@@ -1,5 +1,5 @@
 <template>
-<div style="background: linear-gradient(to top, #283048, #859398); ">
+<div style="background: (to top, #283048, #859398)">
     
   <a-row  type="flex" justify="center" :gutter="8" >
       <a-col :span="20" style="margin-top:15vh">
