@@ -181,6 +181,34 @@
 </template>
 
 <script>
+// Facebook SDK plugin
+(function(d, s, id) {
+  var js,
+    fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "facebook-jssdk");
+window.fbAsyncInit = function() {
+  FB.init({
+    appId: "2463482707080808",
+    xfbml: true,
+    version: "v4.0"
+  });
+};
+
+(function(d, s, id) {
+  var js,
+    fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "facebook-jssdk");
+
 export default {
   data() {
     return {
@@ -189,7 +217,10 @@ export default {
   },
   methods: {
     registerFacebook() {
-      console.log('process.env.VUE_APP_BASE_API_URI :', process.env.VUE_APP_BASE_API_URI);
+      console.log(
+        "process.env.VUE_APP_BASE_API_URI :",
+        process.env.VUE_APP_BASE_API_URI
+      );
       window.open(
         `${process.env.VUE_APP_BASE_API_URI}/auth/facebook`,
         "",
@@ -198,7 +229,10 @@ export default {
       this.signup_visible = false;
     },
     registerGoogle() {
-      console.log('process.env.VUE_APP_BASE_API_URI :', process.env.VUE_APP_BASE_API_URI);
+      console.log(
+        "process.env.VUE_APP_BASE_API_URI :",
+        process.env.VUE_APP_BASE_API_URI
+      );
       window.open(
         `${process.env.VUE_APP_BASE_API_URI}/auth/google`,
         "",
@@ -209,37 +243,6 @@ export default {
   }
 };
 </script>
-<!-- Load Facebook SDK for JavaScript -->
-<script>
-// Facebook SDK plugin
-      (function(d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-    <!-- Load Facebook SDK for JavaScript -->
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId: "2463482707080808",
-            xfbml            : true,
-            version          : 'v4.0'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-      </script>
 
 <style>
 .textShadow {
