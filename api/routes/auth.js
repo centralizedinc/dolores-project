@@ -36,7 +36,8 @@ router.route('/facebook')
     .get(passport.authenticate('facebook', { scope: ["email"] }));
 
 router.route('/facebook/callback')
-    .get(passport.authenticate('facebook', {session: false}),(req, res) => {
+    .get(passport.authenticate('facebook', { session: false }), (req, res) => {
+        console.log('redirect to : ', process.env.VUE_APP_HOME_URI);
         res.redirect(`${process.env.VUE_APP_HOME_URI}/#/auth?oauth=facebook&data=${new Buffer(JSON.stringify(req.user)).toString('base64')}`)
     });
 
@@ -46,10 +47,10 @@ router.route('/google')
     }));
 
 router.route('/google/callback')
-    .get(passport.authenticate('google', {session: false}), (req, res) => {
+    .get(passport.authenticate('google', { session: false }), (req, res) => {
+        console.log('redirect to : ', process.env.VUE_APP_HOME_URI);
         res.redirect(`${process.env.VUE_APP_HOME_URI}/#/auth?oauth=google&data=${new Buffer(JSON.stringify(req.user)).toString('base64')}`)
     });
 
 module.exports = router;
 
-    

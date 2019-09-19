@@ -204,7 +204,7 @@
             <span slot="content">
               PABATID: Ang Northern Quezon kasama po ang ating lungsod ay nananatiling na signal no. 1 ayon sa latest weather bulletin ng PAGASA kaya sa bisa pa din po ng E.O. No. 26 series of 2012 ay nananatiling sa mga pre-elementary or nursery at kinder lang po ang walang pasok bukas, Agosto 28, 2019.
               <br />
-              <br />Mag-ingat po at manatiling handa ang bawat pamilyang Lucenahin!
+              <br />Mag-ingat po at manatiling handa!
               <a-row type="flex" justify="left" :gutter="8">
                 <a-col :span="8">
                   <img
