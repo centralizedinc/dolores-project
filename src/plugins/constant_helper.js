@@ -16,5 +16,5 @@ export default {
         label: "Bayan ng Dolores Quezon"
     },
     name_display: "Dolores",
-    login_background: "https://i.postimg.cc/50TwzJPk/920-2123370039762660539.png"
+    login_background: "https://i.postimg.cc/kgMgZRrk/coverD.jpg"
 }

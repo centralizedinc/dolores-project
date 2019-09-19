@@ -17,7 +17,7 @@
             style="font-size: 50px; color:#fbf49d; "
           >Ease of Doing Business Portal</div>
           <div
-            style="font-size: 20px; color:#0ba4de; letter-spacing: 1em; text-shadow: -5px 2px 2px #00000"
+            style="font-size: 20px; color:#ffffff; text-shadow: -5px 2px 2px #00000"
           >{{constant_helper.home_header.label}}</div>
           <br />
           <span style="margin-top:2vh ; color:#e4e2e2 " class="textShadow">
@@ -176,7 +176,7 @@
       theme_color="#0084ff"
       logged_in_greeting="Hi! I'm Mayor Alcala, How can I help you?"
       logged_out_greeting="Hi! I'm Mayor Alcala, How can I help you?"
-    ></div> -->
+    ></div>-->
   </div>
 </template>
 
