@@ -189,6 +189,7 @@ export default {
   },
   methods: {
     registerFacebook() {
+      console.log('process.env.VUE_APP_BASE_API_URI :', process.env.VUE_APP_BASE_API_URI);
       window.open(
         `${process.env.VUE_APP_BASE_API_URI}/auth/facebook`,
         "",
@@ -197,6 +198,7 @@ export default {
       this.signup_visible = false;
     },
     registerGoogle() {
+      console.log('process.env.VUE_APP_BASE_API_URI :', process.env.VUE_APP_BASE_API_URI);
       window.open(
         `${process.env.VUE_APP_BASE_API_URI}/auth/google`,
         "",
@@ -221,7 +223,6 @@ export default {
       })(document, "script", "facebook-jssdk");
     </script>
     <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
       <script>
         window.fbAsyncInit = function() {
           FB.init({
@@ -237,7 +238,8 @@ export default {
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
+      }(document, 'script', 'facebook-jssdk'));
+      </script>
 
 <style>
 .textShadow {
