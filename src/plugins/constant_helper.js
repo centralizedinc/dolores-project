@@ -1,20 +1,20 @@
 export default {
     mayor_details: {
-        name: 'Roderick "Don Don" Alcala',
-        avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyPcIfiVKrngrFEYE89cWRGk-OQurEm6TTHjtNFDROtKUwKh6U",
+        name: 'Orlan Calayag',
+        avatar: "https://i.postimg.cc/kgS0jvKG/67173199-717906838645209-9201731590730809344-n.jpg",
         website: {
-            url: 'https://www.lucenacity.gov.ph/',
-            label: 'https://www.lucenacity.gov.ph/'
+            url: 'https://www.doloresquezon.gov.ph/',
+            label: 'https://www.doloresquezon.gov.ph/'
         },
         facebook: {
-            url: 'https://www.facebook.com/RoderickDondonAlcala/',
-            label: 'lucena.city'
+            url: 'https://www.facebook.com/OrlanCalayagOfficial/',
+            label: 'Bayan ng Dolores'
         }
     },
     home_header: {
-        logo: 'https://www.lucenacity.gov.ph/img/Lucena_Seal200.png',
-        label: "Lucena City"
+        logo: 'https://i.postimg.cc/50TwzJPk/920-2123370039762660539.png',
+        label: "Bayan ng Dolores Quezon"
     },
-    name_display: "Lucena",
-    login_background: "https://i.postimg.cc/zBFfRPZh/mayor.jpg"
+    name_display: "Dolores",
+    login_background: "https://i.postimg.cc/50TwzJPk/920-2123370039762660539.png"
 }

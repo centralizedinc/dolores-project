@@ -37,8 +37,8 @@
             </template>
             <a slot="author">Mayor {{constant_helper.mayor_details.name}}</a>
             <a-avatar
-              src="https://i.postimg.cc/d3vrh9Jx/images.jpg"
-              alt="alcala photo"
+              
+              :src="constant_helper.mayor_details.avatar"
               slot="avatar"
             />
             <span slot="content">
@@ -94,8 +94,8 @@
             </template>
             <a slot="author">Mayor {{constant_helper.mayor_details.name}}</a>
             <a-avatar
-              src="https://i.postimg.cc/d3vrh9Jx/images.jpg"
-              alt="alcala photo"
+              
+              :src="constant_helper.mayor_details.avatar"
               slot="avatar"
             />
             <span slot="content">
@@ -144,7 +144,7 @@
               </span>
             </template>
             <a slot="author">Mayor {{constant_helper.mayor_details.name}}</a>
-            <a-avatar src="https://i.postimg.cc/d3vrh9Jx/images.jpg" alt slot="avatar" />
+            <a-avatar :src="constant_helper.mayor_details.avatar" alt slot="avatar" />
             <span slot="content">
               PAALALA SA LAHAT:
               <br />
@@ -197,8 +197,8 @@
             </template>
             <a slot="author">Mayor {{constant_helper.mayor_details.name}}</a>
             <a-avatar
-              src="https://i.postimg.cc/d3vrh9Jx/images.jpg"
-              alt="alcala photo"
+              
+              :src="constant_helper.mayor_details.avatar"
               slot="avatar"
             />
             <span slot="content">
