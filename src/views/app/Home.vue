@@ -36,7 +36,7 @@ import PublicService from "@/components/PublicService";
 import Permits from "@/components/Permits";
 import LocalTaxes from "@/components/Taxes";
 import DownloadableForms from "@/components/DownloadableForms";
-import cover_image from "@/assets/cover.jpg";
+// import cover_image from "@/assets/cover.jpg";
 
 export default {
   components: {
@@ -58,7 +58,7 @@ export default {
         "LocalTaxes",
         "DownloadableForms"
       ],
-      cover_image
+      cover_image: 'https://scontent.fmnl7-1.fna.fbcdn.net/v/t1.0-9/12524182_953304438094216_1059850541701783776_n.jpg?_nc_cat=111&_nc_eui2=AeGcePxp3xO8XafNvcrFlhbJZkXYmqJqCgXjCUld-WVL5l8XCXqvI85jpbHN1k9CmvmeP87weDQq6dqanlydEPu4b-rCGPhSh3Xx5-kq5pffsX_rZ_J6h-Bn6LAQgAS2frs&_nc_oc=AQnamdBNG_mZ-7NkrtxTiZwDvZ5zthYJzqwm8aLT1vKI62WRd1QVGCKW11s8vdXj1II&_nc_ht=scontent.fmnl7-1.fna&oh=88ead32528904a24b74b091e56fab485&oe=5E38934C'
     };
   },
   methods: {

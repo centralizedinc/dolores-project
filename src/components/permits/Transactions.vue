@@ -37,7 +37,7 @@
           <div align="center">
             <p>
               Republic of the Philippines
-              <br />City of {{constant_helper.name_display}}
+              <br />{{constant_helper.home_header.label}}
               <br />OFFICE OF THE CITY MAYOR
               <br />
               {{form.application.permit_type}} and Licensing Office

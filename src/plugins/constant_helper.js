@@ -12,7 +12,7 @@ export default {
         }
     },
     home_header: {
-        logo: 'https://i.postimg.cc/50TwzJPk/920-2123370039762660539.png',
+        logo: 'https://i.postimg.cc/kgS0jvKG/67173199-717906838645209-9201731590730809344-n.jpg',
         label: "Bayan ng Dolores Quezon"
     },
     name_display: "Dolores",
