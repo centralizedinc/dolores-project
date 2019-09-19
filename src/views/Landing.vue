@@ -168,47 +168,19 @@
         />
       </a-col>
     </a-row>
-    <div id="fb-root"></div>
+    <!-- <div id="fb-root"></div>
     <div
       class="fb-customerchat"
       attribution="setup_tool"
-      page_id="115862123135923"
-      theme_color="#67b868"
-      logged_in_greeting="Hi! I'm Mayor Calayag, How can I help you?"
-      logged_out_greeting="Hi! I'm Mayor Calayag, How can I help you?"
-    ></div>
+      page_id="109048890468083"
+      theme_color="#0084ff"
+      logged_in_greeting="Hi! I'm Mayor Alcala, How can I help you?"
+      logged_out_greeting="Hi! I'm Mayor Alcala, How can I help you?"
+    ></div> -->
   </div>
 </template>
 
 <script>
-// Facebook SDK plugin
-(function(d, s, id) {
-  var js,
-    fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-  fjs.parentNode.insertBefore(js, fjs);
-})(document, "script", "facebook-jssdk");
-window.fbAsyncInit = function() {
-  FB.init({
-    appId: "2463482707080808",
-    xfbml: true,
-    version: "v4.0"
-  });
-};
-
-(function(d, s, id) {
-  var js,
-    fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-  fjs.parentNode.insertBefore(js, fjs);
-})(document, "script", "facebook-jssdk");
-
 export default {
   data() {
     return {
@@ -217,10 +189,6 @@ export default {
   },
   methods: {
     registerFacebook() {
-      console.log(
-        "process.env.VUE_APP_BASE_API_URI :",
-        process.env.VUE_APP_BASE_API_URI
-      );
       window.open(
         `${process.env.VUE_APP_BASE_API_URI}/auth/facebook`,
         "",
@@ -229,10 +197,6 @@ export default {
       this.signup_visible = false;
     },
     registerGoogle() {
-      console.log(
-        "process.env.VUE_APP_BASE_API_URI :",
-        process.env.VUE_APP_BASE_API_URI
-      );
       window.open(
         `${process.env.VUE_APP_BASE_API_URI}/auth/google`,
         "",
@@ -243,7 +207,7 @@ export default {
   }
 };
 </script>
-
+<!-- Load Facebook SDK for JavaScript -->
 <style>
 .textShadow {
   text-shadow: -2px 5px 4px #000000;
