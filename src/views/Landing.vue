@@ -1,5 +1,14 @@
 <template>
   <div>
+    <div id="fb-root"></div>
+    <div
+      class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="115862123135923"
+      theme_color="#67b868"
+      logged_in_greeting="Hi! I'm Mayor Orlan, How can I help you?"
+      logged_out_greeting="Hi! I'm Mayor Orlan, How can I help you?"
+    ></div>
     <div
       :style="`background-image:url('${constant_helper.login_background}'); height:100%;background-repeat: no-repeat;
   background-size: cover`"
@@ -205,6 +214,23 @@ export default {
       this.signup_visible = false;
     }
   }
+};
+(function(d, s, id) {
+  var js,
+    fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, "script", "facebook-jssdk");
+
+window.fbAsyncInit = function() {
+  FB.init({
+    appId: "2463482707080808",
+    xfbml: true,
+    version: "v4.0"
+  });
 };
 </script>
 <!-- Load Facebook SDK for JavaScript -->
